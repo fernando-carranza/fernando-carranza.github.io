@@ -1,0 +1,166 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #333;
+  padding: 1em;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+  flex: 1;  /* Allow main to grow and fill space */
+}
+
+section {
+  margin-bottom: 2em;
+}
+
+
+/* Updated presentacion class to work with flexbox body */
+.presentacion {
+  display: flex;
+  align-items: flex-start; /* Align to the top of the container */
+  margin-bottom: 2em; /* Space below the presentation */
+}
+
+
+.presentacion img {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.texto-info {
+  flex: 1; /* Allow text section to grow and fill remaining space */
+}
+
+
+section h2 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #555;
+  padding-bottom: 0.5em;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 1em;
+}
+
+ul,
+ol {
+  padding-left: 20px;
+  margin-bottom: 1em;
+}
+
+a {
+  color: #08f;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center images EXCEPT the profile image */
+}
+
+footer {
+  background-color: #333;
+  padding: 1em;
+  text-align: center;
+  margin-top: auto; /* Sticky footer */
+}
+
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+
+  section h2 {
+    font-size: 1.2em;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  .presentacion {
+    flex-direction: column; /* Stack image and text vertically on mobile */
+    align-items: center; /* Center horizontally on mobile */
+  }
+
+  .presentacion img {
+    margin-right: 0; /* Remove right margin on mobile */
+    margin-bottom: 10px; /* Add bottom margin on mobile */
+  }
+  .texto-info {
+    text-align: center; /* Center text on mobile */
+  }
+
+}
+    
+    
+    /* Estilos básicos para la barra de navegación */
+    nav {
+      background-color: #f0f0f0;
+      padding: 20px;
+  justify-content: left; /* Center the navigation items horizontally */
+   width: 100%; /* Make sure the nav takes the full width */
+  margin: 0 auto; /* Center the nav element itself */
+    }
+
+    nav ul {
+      list-style: none;
+      margin: auto;
+      padding: 0;
+      display: flex;
+      text-align: center
+    }
+
+    nav li {
+      margin-right: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #007ACC; /* Cambia este color según tus preferencias */
+    }
+    
+    
+        /* Hide elements not matching the selected language */
+        body[data-lang="en"] [lang="es"],
+        body[data-lang="es"] [lang="en"] {
+            display: none;
+        }
+
+
+
