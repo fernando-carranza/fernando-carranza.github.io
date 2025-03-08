@@ -169,24 +169,25 @@ nav {
 margin-right: 0px;
 }
 
-/* Contenedor para el nombre del académico (izquierda) */
+/* Contenedor para el nombre del académico (izquierda) 
 nav .left-section {
   display: flex;
 }
 
-/* Contenedor para los botones (derecha) */
+/* Contenedor para los botones (derecha) 
 nav .right-section {
   display: flex;
   align-items: center;
-  gap: 20px; /* Espacio entre los botones */
-  justify-content: center; /* Centra los botones horizontalmente */
-}
+  gap: 20px;  Espacio entre los botones 
+  justify-content: center; /* Centra los botones horizontalmente 
+}*/
 
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
+    margin: 0 auto; /* Center the nav element itself */
   gap: 20px; /* Espacio entre los elementos de la lista */
     align-items: center; /* Alinea verticalmente */
 
