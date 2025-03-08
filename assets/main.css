@@ -38,13 +38,19 @@ section {
 }
 
 
-.presentacion img {
+.presentacion-img {
   width: 200px;
   height: auto;
+/*  border-radius: 50%;*/
+margin:auto;
+    }
+
+.presentacion p {
   border-radius: 50%;
   margin-right: 20px;
   margin-left: 20px;
 }
+
 
 .texto-info {
   flex: 1; /* Allow text section to grow and fill remaining space */
@@ -63,6 +69,13 @@ p {
   margin-bottom: 1em;
   font-size: 1.5em;
     text-align: justify;
+}
+
+.ctr {
+  line-height: 1.6;
+  margin-bottom: 1em;
+  font-size: 1.5em;
+    text-align: center;
 }
 
 ul,
@@ -99,13 +112,19 @@ footer {
 
 /* Ensure images are aligned with the text */
 .inline-img {
-    vertical-align: middle; /* Aligns the image middle with the text */
-    margin-right: 10px; /* Optional: Add some space between images and text */
-    margin-left: 10px; /* Optional: Add some space between images and text */
-        display: flex;
-  justify-content: center; /* Center the navigation items horizontally */
+/*    vertical-align: middle; /* Aligns the image middle with the text */
+/*    margin-right: 10px; /* Optional: Add some space between images and text */
+/*    margin-left: 10px; /* Optional: Add some space between images and text */
+/*        display: flex;*/
+/*  justify-content: center; /* Center the navigation items horizontally */
+  display:inline;
   margin: 0 auto; /* Center the nav element itself */
-}
+  width:36px;
+  height:36px;
+  background: #f2f2f2; /* Background color */
+  border-radius: 50%;     /* Redondea bordes (opcional, para foto tipo avatar) */
+  }
+
 
 @media (max-width: 768px) {
   body {
