@@ -165,8 +165,8 @@ nav {
   padding: 20px;
   display: flex;
   justify-content: space-between; /* Distribuye espacio entre los dos bloques */
-  margin-left: 0px;
-margin-right: 0px;
+/*  margin-left: 0px;
+margin-right: 0px;*/
 }
 
 /* Contenedor para el nombre del académico (izquierda) 
@@ -190,7 +190,6 @@ nav ul {
     margin: 0 auto; /* Center the nav element itself */
   gap: 20px; /* Espacio entre los elementos de la lista */
     align-items: center; /* Alinea verticalmente */
-
 }
 
 nav li {
@@ -200,6 +199,8 @@ nav li {
   font-weight: bold;
   font-size: 1.5em;
   display:flex;
+      margin: 0 auto; /* Center the nav element itself */
+    align-items: center; /* Alinea verticalmente */
 }
 
 nav a {
