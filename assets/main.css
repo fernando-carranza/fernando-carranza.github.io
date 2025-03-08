@@ -205,6 +205,7 @@ nav li {
 
 nav a {
 display:flex;
+      margin: 0 auto; /* Center the nav element itself */
 }
 
 nav a:hover {
