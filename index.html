@@ -12,7 +12,7 @@
 
   <body data-lang="es">
     <!-- Language selector -->
-    <div>
+    <div  class="language-selector">
         <label>
             <input type="radio" name="language" value="es" checked>
             Español
@@ -23,7 +23,7 @@
         </label>
     </div>
 
-  <nav>
+<nav>
     <ul>
       <li><a href="index.html" lang="es">Página<br>inicial</a></li>
       <li><a href="index.html" lang="en">Home</a></li>
@@ -36,21 +36,29 @@
       <li><a href="pages/miscelanea.html" lang="es">Misceláneas</a></li>
       <li><a href="pages/miscelanea.html" lang="en">Other<br> stuff</a></li>
     </ul>
-  </nav>
-
+</nav>
 
 
     <main>
  
  <div class="presentacion">
     <!-- Foto a la izquierda -->
-<img src="images/me-in-samica.jpg">
+<p class="ctr">
+<img class="presentacion-img" src="images/me-in-samica-2.jpg">
+<br>
+Fernando Carranza<br>
+(Universidad de Buenos Aires)<br>
+<a href="mailto:fernandocarranza86@gmail.com" target="_blank"><img class="inline-img" src="images/mail.png"  title="E-mail">  E-mail <br>
+<a href="https://github.com/fernandocar86" target="_blank"><img class="inline-img" src="images/github.svg" title="Github"> Github</a> <a href="https://orcid.org/0000-0002-8555-1332" target="_blank"><br>
+<img class="inline-img" src="images/ORCID.png"  title="ORCID"> Orcid</a><br>
+<a href="https://scholar.google.es/citations?hl=es&user=sbs8OcgAAAAJ" target="_blank"><img class="inline-img" src="images/google-scholar.png"  title="Google Scholar"> Google Scholar</a>
+</p>
     
     <!-- Texto a la derecha -->
     <div class="texto-info">
-      <h2>Fernando Carranza</h2>
-<p lang="es">Ayudante de Primera regular de "Modelos Formales No Transformacionales" y "Lingüística" y Ayudante de Primera interino de "Gramática" en la Facultad de Filosofía y Letras de la Universidad de Buenos Aires; Profesor Interino de "Introducción al estudio sistemático de la lengua" en la Universidad de la Ciudad de Buenos Aires</p>
-<p lang="en">Teaching assistant of "Modelos Formales No Transformacionales" ('Non Transformational Formal Models'), "Gramática" ('Grammar') and "Lingüística" ('Linguistics') at Facultad de Filosofía y Letras, Universidad de Buenos Aires. Professor of "Introducción al estudio sistemático de la lengua" ('Introduction to the systematic study of language') at the Universidad de la Ciudad de Buenos Aires</p>
+
+<p lang="es">Ayudante de Primera regular de "Modelos Formales No Transformacionales" y "Lingüística" y Ayudante de Primera interino de "Gramática" en la Facultad de Filosofía y Letras de la Universidad de Buenos Aires</p>
+<p lang="en">Teaching assistant of "Modelos Formales No Transformacionales" ('Non Transformational Formal Models'), "Gramática" ('Grammar') and "Lingüística" ('Linguistics') at Facultad de Filosofía y Letras, Universidad de Buenos Aires.</p>
 <p lang="es">Tópicos de interés: interfaz léxico-sintaxis y sintaxis-semántica, lingüística matemática, gramática de las lenguas romances.</p>
 <p lang="en">Research topics: lexical-syntax and syntax-semantics interface, Romance languages grammar, mathematical linguistics.</p>
 <p lang="es">Lenguas: español (nativo), inglés (intermedio), alemán (intermedio)</p>
@@ -62,11 +70,10 @@
     </main>
     
 <!-- Footer -->
-  <footer class="footer text-faded text-center py-5">
-  <div class="container">
-    <p class="m-0 mbt1">&copy; Fernando Carranza</p>
-    <p class="font-weight-light mb-0">fernando carranza 86 (without spaces) @gmail.com</p>
+  <footer >
+
   </footer>
+
 
 <script>
         // Language switching functionality
