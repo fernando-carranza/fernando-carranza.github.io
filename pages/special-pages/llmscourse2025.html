@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+  <head>
+  <base href="../..">
+    <title>Fernando Carranza</title>
+
+    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
+
+
+    
+  </head>
+
+   <body data-lang="es">
+    <!-- Language selector -->
+    <div class="language-selector">
+        <label>
+            <input type="radio" name="language" value="es" checked>
+            Español
+        </label>
+        <label>
+            <input type="radio" name="language" value="en" >
+            English
+        </label>
+    </div>
+
+<nav>
+    <ul>
+      <li><a href="index.html" lang="es">Página<br>inicial</a></li>
+      <li><a href="index.html" lang="en">Home</a></li>
+      <li><a href="pages/research.html" lang="es">Investigación</a></li>
+      <li><a href="pages/research.html" lang="en">Research</a></li>
+      <li><a href="pages/teaching.html" lang="es">Enseñanza</a></li>
+      <li><a href="pages/teaching.html" lang="en">Teaching</a></li>
+      <li><a href="pages/coding.html" lang="es">Código</a></li>
+      <li><a href="pages/coding.html" lang="en">Coding</a></li>
+      <li><a href="pages/miscelanea.html" lang="es">Misceláneas</a></li>
+      <li><a href="pages/miscelanea.html" lang="en">Other<br> stuff</a></li>
+    </ul>
+</nav>
+
+
+
+    <main>
+
+ <div class="presentacion">
+    <!-- Foto a la izquierda -->
+<p class="ctr">
+<img class="presentacion-img" src="images/me-in-samica-2.jpg">
+<br>
+Fernando Carranza<br>
+(Universidad de Buenos Aires)<br>
+<a href="mailto:fernandocarranza86@gmail.com" target="_blank"><img class="inline-img" src="images/mail.png"  title="E-mail">  E-mail <br>
+<a href="https://github.com/fernandocar86" target="_blank"><img class="inline-img" src="images/github.svg" title="Github"> Github</a> <a href="https://orcid.org/0000-0002-8555-1332" target="_blank"><br><img class="inline-img" src="images/ORCID.png"  title="ORCID"> Orcid</a><br>
+<a href="https://scholar.google.es/citations?hl=es&user=sbs8OcgAAAAJ" target="_blank"><img class="inline-img" src="images/google-scholar.png"  title="Google Scholar"> Google Scholar</a></p>
+    
+    <!-- Texto a la derecha -->
+    <div class="texto-info">
+    <h1 lang="es">Fundamentos de los Grandes Modelos de Lenguaje y aplicación de técnicas de prompting en IAs generativas</h1>
+    <h1 lang="en">Basic notions of Large Language Models and prompting techniques in generative AIs</h1>
+    <p lang="es">Curso para el proyecto "Letra y código" del Departamento de Letras de la Universidad de Buenos Aires</p>
+<p lang="en">Course for the project "Letra y código" of the Departamento de Letras of the Universidad de Buenos Aires</p>
+
+<p lang="es">Docentes: Fernando Carranza, Julia Milanese y Fernando Schiaffino</p>
+<p lang="en">Teachers: Fernando Carranza, Julia Milanese y Fernando Schiaffino</p>
+<p lang="es">Fecha y Lugar: 15, 22 y 29 de abril de 2025, Facultad de Filosofía y Letras</p>
+<p lang="en">Date and Address: 15th, 22th and 29th april, 2025, Facultad de Filosofía y Letras</p>
+
+<p lang="es">Materiales:<p>
+<p lang="en">Course materials</p>
+<ul>
+<li>El programa se puede consultar <a href="pages/special-pages/2025-Programa.pdf" target="_blank">aquí</a>.</li>
+<li><a href="pages/special-pages/clase01-vectores.pdf" target="_blank">Presentación para 1era parte de clase 1</a></li>
+<li><a href="pages/special-pages/clase01-parte2.pdf" target="_blank">Presentación para 2nda parte de clase 1</a></li>
+</ul>
+
+
+</div>
+    </main>
+    
+<!-- Footer -->
+  <footer>
+
+  </footer>
+
+<script>
+        // Language switching functionality
+        document.querySelectorAll('input[name="language"]').forEach(radio => {
+            radio.addEventListener('change', function() {
+                document.body.setAttribute('data-lang', this.value);
+                
+                // Optional: Store language preference in localStorage
+                localStorage.setItem('preferredLanguage', this.value);
+            });
+        });
+
+        // Check for saved language preference on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedLanguage = localStorage.getItem('preferredLanguage');
+            if (savedLanguage) {
+                document.querySelector(`input[name="language"][value="${savedLanguage}"]`).checked = true;
+                document.body.setAttribute('data-lang', savedLanguage);
+            }
+        });
+    </script>  
+    <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const toggles = document.querySelectorAll('.toggle-content');
+
+    toggles.forEach(toggle => {
+      toggle.addEventListener('click', function() {
+        const content = this.previousElementSibling;
+        if (content.classList.contains('hidden')) {
+          content.classList.remove('hidden');
+          this.textContent = '▴ Ocultar/Hide';
+        } else {
+          content.classList.add('hidden');
+          this.textContent = '▾ Mostrar más/Show more';
+        }
+      });
+    });
+  });
+</script>
+    
+  </body>
+</html>
