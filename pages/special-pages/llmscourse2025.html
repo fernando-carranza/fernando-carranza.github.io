@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-  <base href="..">
+  <base href="../..">
     <title>Fernando Carranza</title>
 
     <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
@@ -10,7 +10,7 @@
     
   </head>
 
-  <body data-lang="es">
+   <body data-lang="es">
     <!-- Language selector -->
     <div class="language-selector">
         <label>
@@ -55,32 +55,25 @@ Fernando Carranza<br>
     
     <!-- Texto a la derecha -->
     <div class="texto-info">
-    
-<h1 lang="es">Música</h1>
-<h1 lang="en">Music</h1>
+    <h1 lang="es">Fundamentos de los Grandes Modelos de Lenguaje y aplicación de técnicas de prompting en IAs generativas</h1>
+    <h1 lang="en">Basic notions of Large Language Models and prompting techniques in generative AIs</h1>
+    <p lang="es">Curso para el proyecto "Letra y código" del Departamento de Letras de la Universidad de Buenos Aires</p>
+<p lang="en">Course for the project "Letra y código" of the Departamento de Letras of the Universidad de Buenos Aires</p>
 
-<h2>Symploké</h2>
+<p lang="es">Docentes: Fernando Carranza, Julia Milanese y Fernando Schiaffino</p>
+<p lang="en">Teachers: Fernando Carranza, Julia Milanese y Fernando Schiaffino</p>
+<p lang="es">Fecha y Lugar: 15, 22 y 29 de abril de 2025, Facultad de Filosofía y Letras</p>
+<p lang="en">Date and Address: 15th, 22th and 29th april, 2025, Facultad de Filosofía y Letras</p>
 
-<p lang="es">Además de mi trabajo académico, me desempeño como bajista y charanguista en Symploké. A continuación pueden encontrar links para consultar material de la banda.</p>
-<p lang="en">I also play bass and charango in Symploké. Here you can find some links to the music of the band.</p>
-
+<p lang="es">Materiales:<p>
+<p lang="en">Course materials</p>
 <ul>
-<li><a href="https://www.youtube.com/@symploke" target="_blank">Canal de Youtube</a>
-<li><a href="https://symploke.bandcamp.com/" target="_blank">Bandcamp</a></li>
-<li>Spotify</li>
-<li><a href="https://www.facebook.com/symploke/" target="_blank">Facebook</a></li>
+<li>El programa se puede consultar <a href="pages/special-pages/2025-Programa.pdf" target="_blank">aquí</a>.</li>
+<li><a href="pages/special-pages/clase01-vectores.pdf" target="_blank">Presentación para 1era parte de clase 1</a></li>
+<li><a href="pages/special-pages/clase01-parte2.pdf" target="_blank">Presentación para 2nda parte de clase 1</a></li>
 </ul>
 
-<p lang="es">En mis ratos libres toco la guitarra o el charango. Me gusta tocar sobre todo rock, tango y folclore argentino.</p>
-<p lang="en">In my free time, I like to play guitar or charango. I like to play specially rock, tango and argentinian folk music.</p>
 
-<h1 lang="es">Humor</h1>
-<h1 lang="en">Humour</h1>
-
-<p lang="es">Eventualmente hago viñetas de humor gráfico usando el seudónimo FerCa. En el siguiente link puede encontrarse la página oficial de FerCa en <a href="https://www.facebook.com/profile.php?id=100064074431384&locale=es_LA" target="_blank">Facebook</a> e <a href="https://www.instagram.com/ferca_humor/" target="_blank">Instagram</a>.</p>
-<p lang="en">Sometimes I make funny cartoons using the pen name FerCa. Check out FerCa's drawings at the following links: <a href="https://www.facebook.com/profile.php?id=100064074431384&locale=es_LA" target="_blank">Facebook</a> and <a href="https://www.instagram.com/ferca_humor/" target="_blank">Instagram</a>.</p>
-
-</div>
 </div>
     </main>
     
@@ -108,6 +101,25 @@ Fernando Carranza<br>
                 document.body.setAttribute('data-lang', savedLanguage);
             }
         });
-    </script>      
+    </script>  
+    <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const toggles = document.querySelectorAll('.toggle-content');
+
+    toggles.forEach(toggle => {
+      toggle.addEventListener('click', function() {
+        const content = this.previousElementSibling;
+        if (content.classList.contains('hidden')) {
+          content.classList.remove('hidden');
+          this.textContent = '▴ Ocultar/Hide';
+        } else {
+          content.classList.add('hidden');
+          this.textContent = '▾ Mostrar más/Show more';
+        }
+      });
+    });
+  });
+</script>
+    
   </body>
 </html>
